@@ -1,4 +1,5 @@
-FROM debian:8
+FROM d.quantibio.com/alpine:3.4
+MAINTAINER Yeer Fan "iofanyer@ogmail.com"
 
 # less priviledge user, the id should map the user the downloaded files belongs to
 RUN groupadd -r dummy && useradd -r -g dummy dummy -u 1000
